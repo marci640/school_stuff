@@ -25,34 +25,34 @@
             var clientY = event.clientY;
             console.log(reference.current);
             setMousePosition({ x: clientX, y: clientY });
-            if (clientX >= 800 
-                && clientX <= 830 
-                && clientY >= 250 
-                && clientY <= 300 
+            if (clientX >= 800
+                && clientX <= 830
+                && clientY >= 250
+                && clientY <= 300
                 && reference.current == "https://images4.alphacoders.com/645/64574.jpg") {
                 alert("You found Waldo!!");
             }
-            else if (clientX >= 660 
-                && clientX <= 690 
-                && clientY >= 280 
-                && clientY <= 300 
+            else if (clientX >= 660
+                && clientX <= 690
+                && clientY >= 280
+                && clientY <= 300
                 && reference.current == "https://images2.alphacoders.com/925/925901.jpg") {
                 alert("You found Waldo!!");
             }
-            else if (clientX >= 30 
-                && clientX <= 55 
-                && clientY >= 115 
-                && clientY <= 140 
+            else if (clientX >= 30
+                && clientX <= 55
+                && clientY >= 115
+                && clientY <= 140
                 && reference.current == "https://images6.alphacoders.com/925/925900.jpg") {
                 alert("You found Waldo!!");
             }
 
-        // 650 - 
+            // 650 - 
             //530-550
 
             //530-550
             //30-55
-        
+
         }, [setMousePosition]);
 
 
@@ -82,11 +82,10 @@
 
         return (
             React.createElement( 'div', null, 
-                React.createElement( 'p', { style: { color: 'black', backgroundColor: 'white' } }, " Where's Waldo??? ")
-                /* <button onClick={handleClick}>Level 1</button> */, 
-                React.createElement( 'button', { onClick: handleInput, value: "level 1" }, "Level 1"), 
-                React.createElement( 'button', { onClick: handleInput, value: "level 2" }, "Level 2"), 
-                React.createElement( 'button', { onClick: handleInput, value: "level 3" }, "Level 3"), 
+                React.createElement( 'img', { style: { width: 52, height: 36 }, src: "https://lh3.googleusercontent.com/proxy/GGpS20ThpZ2zGQ1kVVMqUGXoajBslizw-3JNCvqhQE2EKI63Rv1vMCwxdeGjRGALrU0sDskR8zoo_mlgRMk7KGFApUcg9VBizHxkjAxVVfS4PBuQCokzcK3yuYo7fWQmsXc", alt: "Where's Waldo?" }), 
+                React.createElement( 'button', { style: { backgroundColor: 'red', borderRadius: 8, color: 'white' }, onClick: handleInput, value: "level 1" }, "Level 1"), 
+                React.createElement( 'button', { style: { backgroundColor: 'blue', borderRadius: 8, color: 'white' }, onClick: handleInput, value: "level 2" }, "Level 2"), 
+                React.createElement( 'button', { style: { backgroundColor: 'red', borderRadius: 8, color: 'white' }, onClick: handleInput, value: "level 3" }, "Level 3"), 
 
 
                 React.createElement( 'div', { style: {

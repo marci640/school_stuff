@@ -43,12 +43,6 @@ const App = () => {
             alert("You found Waldo!!")
         }
 
-        // 650 - 
-        //530-550
-
-        //530-550
-        //30-55
-
     }, [setMousePosition]);
 
 
@@ -70,19 +64,19 @@ const App = () => {
             setLevel(reference.current)
 
         }
-        //some logic
-        //800-830
-        //250-300
+
     }
 
 
     return (
         <div>
-            <p style={{ color: 'black', backgroundColor: 'white' }}> Where's Waldo??? </p>
-            {/* <button onClick={handleClick}>Level 1</button> */}
-            <button onClick={handleInput} value="level 1">Level 1</button>
-            <button onClick={handleInput} value="level 2">Level 2</button>
-            <button onClick={handleInput} value="level 3">Level 3</button>
+            <img style={{ width: 52, height: 36 }}
+                src="https://lh3.googleusercontent.com/proxy/GGpS20ThpZ2zGQ1kVVMqUGXoajBslizw-3JNCvqhQE2EKI63Rv1vMCwxdeGjRGALrU0sDskR8zoo_mlgRMk7KGFApUcg9VBizHxkjAxVVfS4PBuQCokzcK3yuYo7fWQmsXc"
+                alt="Where's Waldo?"
+            />
+            <button style={{ backgroundColor: 'red', borderRadius: 8, color: 'white' }} onClick={handleInput} value="level 1">Level 1</button>
+            <button style={{ backgroundColor: 'blue', borderRadius: 8, color: 'white' }} onClick={handleInput} value="level 2">Level 2</button>
+            <button style={{ backgroundColor: 'red', borderRadius: 8, color: 'white' }} onClick={handleInput} value="level 3">Level 3</button>
 
 
             <div style={{
